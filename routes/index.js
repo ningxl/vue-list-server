@@ -10,6 +10,7 @@ router.get('/getData', function (req, res) {
   });
 });
 router.post('/setData', function (req, res) {
+  console.log(req.body);
   User.remove({}, function (err, data) {
     if (err) throw err;
     res.send(data);

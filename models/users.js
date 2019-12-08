@@ -3,11 +3,14 @@ var Schema = mongoose.Schema;
 
 // 声明一个数据集 对象
 var userSchema = new Schema({
-    priority: {
+    time:{
         type: String,
     },
-    name: {
+    type: {
         type: String,
+    },
+    cost: {
+        type: Number,
     },
     detail: {
         type: String,
